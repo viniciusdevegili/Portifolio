@@ -193,15 +193,11 @@ body {
     filter: brightness(1);
 }
 
-.botoes {
-    margin-left: auto;
-}
-
 .btn-wrapper {
     display: flex;
     margin-top: 65px;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    position: absolute;
     transform: translate(-50%, -50%);
 }
 
@@ -279,7 +275,7 @@ body {
     color: rgb(1, 156, 177);
     display: flex;
     font-size: 50px;
-    padding-bottom: 5vh;
+    margin-top: -15px;
     font-family: "Kanit", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -322,3 +318,95 @@ body {
     margin-left: 20vh;
     margin-right: 20vh;
 }
+
+.btn-back {
+    display: flex;
+    margin-top: 6px;
+    margin-left: -33vh;
+    transform: translate(-50%, -50%);
+}
+
+.btn-back a {
+    margin: 20px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #979797;
+    border: 2px solid #979797;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    border-radius: 8px;
+}
+
+.btn-back a span {
+    position: relative;
+    z-index: 2;
+
+}
+
+.btn-back a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(1, 156, 177);
+    transition: all .35s;
+}
+
+.btn-back a:hover {
+    color: #fff;
+}
+
+.btn-back a:hover:after {
+    width: 100%;
+}
+
+.formacoes-screen h4 {
+    position: absolute;
+    top: 35%;
+    right: 30vh;
+    color: white;
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+}
+
+.links-email a img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    right: 36vh;
+    filter: brightness(0.8);
+}
+
+.links-email a img:hover {
+    transform: scale(1.15s);
+    filter: brightness(1);
+}
+
+.links-phone a img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    left: 143vh;
+    filter: brightness(0.8);
+}
+
+.links-phone a img:hover {
+    transform: scale(1.15s);
+    filter: brightness(1);
+}
+
+
+
+
